@@ -1,0 +1,357 @@
+*{
+    box-sizing: inherit;
+    
+}
+body
+{
+
+}
+.a_logo
+{
+    background-color: transparent;
+    overflow-wrap: anywhere;
+}
+img
+{
+    vertical-align: middle;
+    height: auto;
+    border: 0;
+    width: 100px;
+}
+.logo_modificar
+{
+    max-width: 50px;
+
+}
+#title_div
+{
+    box-sizing: inherit;
+    display: block;
+    unicode-bidi: isolate;
+    line-height: 1;
+    overflow-wrap: anywhere;
+}
+
+#title
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3333333333333rem;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+    line-height: 1;
+}
+.titilo_logo
+{
+    color: #2b2f38;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    outline: 0;
+    box-sizing: inherit;
+    background-color: transparent;
+}
+
+
+
+
+.image-container{
+    border-radius: 0px 0px 80px 80px;
+    max-width: 100%;
+    height: 100%;
+    background-image: url(imgs/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 10%;
+}
+#letras
+{
+    width: 80%; /* Cambia este valor según tus necesidades */
+    margin: 0 auto; /* Esto centra el div horizontalmente */
+    display: flex;
+    flex-direction: column;
+}
+#logo
+{
+    height: 50px;
+    width: 50px;
+    padding-right: 1em;
+    box-sizing: inherit;
+    line-height: 1;
+    overflow-wrap: anywhere;
+}
+#menu
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Cambia este valor según tus necesidades */
+    margin: 0 auto; /* Esto centra el div horizontalmente */
+}
+#navegadorPag
+{
+    display: flex;
+}
+li{
+    padding: 20px;
+}
+#logoGeneral
+{
+    flex-wrap: nowrap;
+    display: flex;
+    height: 100%;
+    min-height: 0;
+    align-items: center;
+    box-sizing: inherit;
+    unicode-bidi: isolate;
+    overflow-wrap: anywhere;
+}
+#logoGeneral2
+{
+    display: flex;
+    padding-right: 0;
+
+    padding-left: 0;
+
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
+    box-sizing: inherit;
+    overflow-wrap: anywhere;
+    padding: 1em 0;
+
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    line-height: 1;
+    align-self: center;
+    
+}  
+header
+{
+
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+#slogan
+{
+    font-size: 4.2666666666667rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2b2f38;
+    line-height: 1.2;
+}
+#letras
+{
+    margin-inline-end: 50%;
+}
+.contenedor_plantasV
+{
+    justify-content: stretch;
+}
+#contenedor-caja
+{
+    display: flex;
+    justify-content: space-around;
+}
+#contenedorPlantas
+{
+    display: flex;
+    justify-content: space-around;
+}
+.planta
+{
+    background-color: #efeef4;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    display: flex;
+    flex-direction: column;
+   /* Cambia el fondo al pasar el mouse sobre el elemento background-transition: 0.3s; */
+    border-radius: 16px 16px 16px 16px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 32px;
+    margin-inline-end: 0px;
+    padding-block-start: 440px;
+    padding-block-end: 40px;
+    padding-inline-start: 32px;
+    padding-inline-end: 64px;
+
+}
+.planta1
+{
+    background-image: url(imgs/planta1.jpg);
+}
+.planta2
+{
+    background-image: url(imgs/planta2.jpg);
+}
+.planta3
+{
+    background-image: url(imgs/planta3.jpg);
+}
+.botonElemento
+{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    fill: #fc5f5f;
+    color:#fc5f5f;
+    background-color: transparent;
+    padding: 0;
+
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: transparent;
+}
+.imagen_PlantaV
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: .8em;
+}
+.Producto_imagen
+{
+    position: relative;
+    display: block;
+    box-shadow: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: left;
+}
+.producto_venta
+{
+    margin-bottom: 2.5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.div_venta
+{
+    display: block;
+    unicode-bidi: isolate;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+.productos_colummnas
+{
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none outside;
+    clear: both;
+    display: grid;
+    column-gap: 20px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+
+}
+.contenedor_plantas_ventas
+{
+    max-width: 1200px;
+    /* Estilos sin las variables CSS personalizadas */
+    flex-basis: auto; /* Cambia 'var(--flex-basis)' por 'auto' */
+    flex-grow: 0; /* Cambia 'var(--flex-grow)' por '0' */
+    flex-shrink: 1; /* Cambia 'var(--flex-shrink)' por '1' */
+    order: 0; /* Cambia 'var(--order)' por '0' */
+    align-self: auto; /* Cambia 'var(--align-self)' por 'auto' */
+    display: flex; /* Cambia 'var(--display)' por 'flex' */
+
+    padding-block-start: 0px; /* Cambia 'var(--padding-block-start)' por '0px' */
+    padding-block-end: 0px; /* Cambia 'var(--padding-block-end)' por '0px' */
+    padding-inline-start: 0px; /* Cambia 'var(--padding-inline-start)' por '0px' */
+    padding-inline-end: 0px;
+    position: relative;
+}
+.contenedor_comentario
+{
+    display: flex;
+    flex-direction: row;
+
+    
+    align-items: stretch;
+    gap: 0px 0px;
+    border-radius: 16px 16px 16px 16px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+
+}
+.imagen_coment1
+{
+    background-image: url(imgs/coment1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 40%;
+    display: flex;
+    border-radius: 16px 16px 16px 0px;
+    flex-direction: column;
+}
+.imagen_coment2
+{
+    max-width: 100%;
+    margin-block-end: 0;
+    position: relative;
+    align-content: initial;
+    flex-direction: initial;
+    flex-wrap: initial;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    gap: initial;
+    flex-basis: initial;
+    flex-grow: initial;
+    flex-shrink: initial;
+    order: initial;
+    align-self: initial;
+}

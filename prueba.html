@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsivo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #22282e;
+            height: 60px;
+            position: relative;
+            width: 100%;
+        }
+
+        #logo {
+            float: left;
+            padding: 6px 20px;
+            width: auto;
+            height: 60px;
+        }
+
+        #logo a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            line-height: 44px;
+            text-transform: uppercase;
+        }
+
+        #menu {
+            position: absolute;
+            top: 60px;
+            width: 100%;
+        }
+
+        #menu ul {
+            max-height: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        #menu ul.open-menu {
+            max-height: 400px;
+        }
+
+        #menu ul li {
+            display: block;
+            background: #33363b;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 1px solid #282b30;
+        }
+
+        #menu ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            line-height: 60px;
+            padding: 0 26px;
+        }
+
+        #menu ul li a:hover {
+            color: #ffc700;
+        }
+
+        #nav-mobile {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            float: right;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: -60px;
+            opacity: 0.6;
+        }
+
+        #nav-mobile.nav-open {
+            opacity: 1;
+        }
+
+        #nav-mobile span {
+            display: block;
+            width: 60%;
+            margin: 4px auto;
+            height: 4px;
+            background: #fff;
+        }
+
+        @media only screen and (min-width: 768px) {
+            #nav-mobile {
+                display: none;
+            }
+
+            #menu {
+                width: auto;
+                float: right;
+                top: 0;
+                position: relative;
+            }
+
+            #menu ul {
+                max-height: inherit;
+            }
+
+            #menu ul li {
+                float: left;
+                border: 0;
+                background: transparent;
+            }
+
+            #menu ul li a:hover {
+                color: #ffc700;
+                background: #151a1e;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#">MQ</a>
+        </div>
+        <nav id="menu">
+            <button class="nav-mobile" id="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">Recursos Web</a></li>
+                <li><a href="#">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navMobile = document.getElementById('nav-mobile');
+            var menu = document.getElementById('menu');
+            navMobile.addEventListener('click', function () {
+                menu.querySelector('ul').classList.toggle('open-menu');
+                navMobile.classList.toggle('nav-open');
+            });
+        });
+    </script>
+</body>
+</html>
