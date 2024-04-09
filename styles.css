@@ -4,7 +4,20 @@
 }
 body
 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
 
+::selection {
+    background-color: #fc5f5f; /* Cambiar el color de fondo de la selección */
+}
+
+#contenedorTodo
+{
+    width: 100%;
+    height: 100%;
 }
 .a_logo
 {
@@ -25,56 +38,128 @@ img
 }
 #title_div
 {
-    box-sizing: inherit;
-    display: block;
-    unicode-bidi: isolate;
     line-height: 1;
-    overflow-wrap: anywhere;
 }
+a{
 
+    text-decoration: none;
+}
 #title
 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3333333333333rem;
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     margin-bottom: 0;
-    overflow-wrap: anywhere;
-    line-height: 1;
+    line-height: 1.2;
+    text-decoration: none;
 }
 .titilo_logo
 {
+    font-size: 1.3333333333333rem;
     color: #2b2f38;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     line-height: 1.2;
-    outline: 0;
-    box-sizing: inherit;
-    background-color: transparent;
+    font-weight: 500;
 }
 
 
-
-
-.image-container{
+.image-container {
+    position: relative; /* Establecer el posicionamiento relativo para que el pseudo-elemento se posicione correctamente */
     border-radius: 0px 0px 80px 80px;
     max-width: 100%;
     height: 100%;
-    background-image: url(imgs/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    padding-top: 10%;
+    background: url(imgs/hero-bg.jpg) center/cover no-repeat; /* Simplificar la propiedad background */
+    padding: 6% 0; /* Añadir padding solo arriba y abajo */
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
 }
+
+.image-container::before {
+    content: ""; /* Contenido generado */
+    position: absolute; /* Posición absoluta con respecto al contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #efeef4 0%, #FFFFFF00 32%);
+
+}
+
 #letras
 {
-    width: 80%; /* Cambia este valor según tus necesidades */
-    margin: 0 auto; /* Esto centra el div horizontalmente */
+
+
     display: flex;
+    margin: 0 auto; /* Esto centra el div horizontalmente */
     flex-direction: column;
+    padding-top: 90px;
+    left: 50%; /* Coloca el menú en la mitad horizontal del contenedor */
+    align-items:start;
+    width: 63%; /* Cambia este valor según tus necesidades */
+    
+    color: #2b2f38;
 }
+h1,h2,h3,h4,h5,h6
+{
+    clear: both;
+}
+.frase
+{
+    margin-inline-end: 50%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#eslogan1
+{
+    line-height: 1.2em;
+    margin: 0%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+
+
+}
+#eslogan2
+{
+    line-height: 1.4em;
+    font-size: 4.2666666666667rem;
+    /*font-weight:500;*/
+
+}
+
+#boton_menu
+{
+    font-size: 0.8rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    font-weight: 600;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-style: solid;
+    text-decoration: none;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    display: inline-block;
+
+    fill: #fff;
+    text-align: center;
+
+    box-sizing: border-box;
+
+
+    color:#ffffff;
+    background-color: #fc5f5f;
+    border-color: #fc5f5f;
+
+}
+
 #logo
 {
     height: 50px;
@@ -86,17 +171,34 @@ img
 }
 #menu
 {
+
     display: flex;
     justify-content: space-between;
-    width: 80%; /* Cambia este valor según tus necesidades */
+    width: 100%;
     margin: 0 auto; /* Esto centra el div horizontalmente */
+
 }
+header
+{
+    padding-top: 90px;
+    position: absolute; /* Establece el menú como absoluto */
+    left: 50%; /* Coloca el menú en la mitad horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el menú correctamente */
+    justify-content: space-between;
+    align-items: center;
+    width: 63%; /* Cambia este valor según tus necesidades */
+    z-index: 100;
+
+}
+
+
 #navegadorPag
 {
     display: flex;
 }
 li{
     padding: 20px;
+    list-style: none;
 }
 #logoGeneral
 {
@@ -130,13 +232,7 @@ li{
     align-self: center;
     
 }  
-header
-{
 
-    position: absolute;
-    justify-content: space-between;
-    width: 100%;
-}
 #slogan
 {
     font-size: 4.2666666666667rem;
@@ -144,19 +240,76 @@ header
     color: #2b2f38;
     line-height: 1.2;
 }
-#letras
+
+
+
+
+
+
+.content2
 {
-    margin-inline-end: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.contenedor_plantasV
+.centrarContenido
 {
-    justify-content: stretch;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    width: 53%; /* Cambia este valor según tus necesidades */
 }
 #contenedor-caja
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+.caja
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iconoPlanta2
+{
+    display: flex;
+}
+.icono2paint
+{
+    margin-right: 16px;
+    width: 34px;
+}
+.textoPlanta2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+
+}
+.tituloh5
+{
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4px;
+    margin: 0%;
+    font-weight: 500;
+    text-align: left;
+    box-sizing: border-box;
+    font-style: inherit;
+}
+.parrafo2
+{
+    margin: 0%;
+    vertical-align: baseline;
+}
+
+.contenedor_plantasV
+{
+    justify-content: stretch;
+}
+
 #contenedorPlantas
 {
     display: flex;
