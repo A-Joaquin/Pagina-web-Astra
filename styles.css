@@ -1,14 +1,18 @@
-*{
-    box-sizing: inherit;
-    
+html{
+    width: 100%;
 }
-body
-{
+body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
 }
+
 
 ::selection {
     background-color: #fc5f5f; /* Cambiar el color de fondo de la selección */
@@ -16,11 +20,13 @@ body
 
 #contenedorTodo
 {  
+    width: 100%;
 }
 .a_logo
 {
     background-color: transparent;
     overflow-wrap: anywhere;
+
 }
 img
 {
@@ -37,6 +43,7 @@ img
 #title_div
 {
     line-height: 1;
+    padding: 15px;
 }
 a{
 
@@ -156,6 +163,7 @@ h1,h2,h3,h4,h5,h6
 
 }
 
+
 #logo
 {
     height: 50px;
@@ -164,6 +172,7 @@ h1,h2,h3,h4,h5,h6
     box-sizing: inherit;
     line-height: 1;
     overflow-wrap: anywhere;
+    padding-right: 5%;
 }
 #menu
 {
@@ -182,17 +191,11 @@ header
     transform: translate(-50%, -50%); /* Centra el menú correctamente */
     justify-content: space-between;
     align-items: center;
-    width: 80%; /* Cambia este valor según tus necesidades */
+    width: 100%; /* Cambia este valor según tus necesidades */
     z-index: 100;
+
 }
-#navegadorPag
-{
-    display: flex;
-}
-li{
-    padding: 20px;
-    list-style: none;
-}
+
 #logoGeneral
 {
     flex-wrap: nowrap;
@@ -202,7 +205,6 @@ li{
     align-items: center;
     box-sizing: inherit;
     unicode-bidi: isolate;
-    overflow-wrap: anywhere;
 }
 #logoGeneral2
 {
@@ -226,6 +228,67 @@ li{
     
 }  
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.navbar {
+
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-links {
+    float: right;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #2b2f38;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+/* Estilos para el menú responsivo */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    float: right;
+    line-height: 70px;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+
+
+
 #slogan
 {
     font-size: 4.2666666666667rem;
@@ -234,28 +297,377 @@ li{
     line-height: 1.2;
 }
 
-
-
-
-
-
-.content2
+.c2
 {
     width: 100%;
+}
+
+
+/* Agrega este CSS en tu archivo de estilos o en una etiqueta <style> en tu HTML */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja {
+    width: 30%; /* Ancho inicial de las cajas */
     display: flex;
     justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    color: #000000;
+    font-size: 28px;
+    line-height: 70px;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+}
+
+.nav-links li { 
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+/* Estilos para el menú responsivo */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    float: right;
+    line-height: 70px;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    header
+    {
+        position:absolute;
+        margin-top: 0px;
+    }
+
+    #logo
+    {
+        height: 40px;
+        width: 50px;
+    }
+    .logo_modificar
+    {
+        width: auto;
+    }
+    #title_div
+    {
+        padding: 0;
+    }
+    .titilo_logo
+    {
+        font-size: 0.5 !important; 
+        color: #2b2f38;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+    #title_div
+    {
+        width: 50%;
+    }
+    .container {
+        width: 90%;
+    }
+
+    .navbar
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .nav-links li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-color: #fc5f5f;
+        border: 1px solid #fc5f5f; /* Agrega border junto con el color */
+    }
+
+    .nav-links li a {
+        line-height: 30px;
+        color:#2b2f38;
+        
+    }
+    .nav-links li a:hover {
+        color: #fc5f5f; /* Cambiamos el color del texto al pasar el mouse */
+    }
+    
+
+
+    .logo {
+        text-align: center;
+        float: none;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    #menu-toggle:checked ~ .navbar .nav-links {
+        display: block;
+    }
+    nav{
+        margin-top: 70px;
+        position: absolute;
+        width: 100%;
+        transform: translateX(-50px); /* Esto trasladará el nav 20px hacia la izquierda */
+    }
+    
+    
+    
+    
+    li
+    {
+        width: 100% ;
+    }
+    .li-nav
+    {
+        background-color: #fff;
+        width: 100%;
+    }
+
+
+     /* ------------------------------------------------------------------------*/
+    
+     .planta
+     {
+     
+         padding-block-start: 95% !important;
+         padding-block-end: 40px;
+         padding-inline-start: 32px;
+         padding-inline-end: 64px;
+         
+         margin-top: 5%;
+     
+     
+     }
+    
+    
+    
+    /* ------------------------------------------------------------------------*/
+    
+    .producto_venta
+    {
+        width: 46% !important;
+        margin-bottom: 0% !important;
+    }
+
+    .tipo_plantaV
+    {
+        margin-bottom: 5px;
+        margin-top: 6px !important;
+        font-size:0.9em;
+        color: #2b2f3896;
+    }
+    .titulo_plantaV
+    {
+        font-size:0.95em;
+        color:#2b2f38;
+        text-decoration: none;
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .star-rating {
+        width: 100px !important; /* Ancho del contenedor */
+    }
+    .star
+    {
+
+    }
+    .price
+    {
+        font-size:0.95em;
+        color:#787a81;
+        text-decoration: none; /* Quitamos el subrayado por defecto de los enlaces */
+        font-weight: bold; /* Poner el texto en negrita */
+    }
+    
+
+    /* ------------------------------------------------------------------------*/
+    /* ---CONTENEDOR CONTACTO---------------------------------------------------------------------*/
+    
+
+    #contenedor-contacto
+    {
+        display: flex;
+        flex-direction: column !important;
+    }
+    
+    .content5{
+        display: flex;
+        min-height: 5%;
+        height: 5%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50% !important;
+    }
+
+
+    .contenedor-contacto-titulo
+    {
+
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .titulo_contacto
+    {
+        font-size: 1.3em !important;
+        color: #2b2f38;
+    }
+    .contenedor-telefono
+    {
+        margin-top: 5%;
+    }
+    .parrafo-contacto
+    {
+        color: #2b2f38c4;
+        width: 60%;
+        width: 100% !important;
+        padding-top: 30px;
+    }
+    .contenedorDeContacto
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80% !important;
+    }
+    #contenedor-contacto
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    /* ------------------------------------------------------------------------*/
+    /* CONTENEDOR TESTIMONIOS------------------------------------------------------------------------*/
+
+
+
+
+
+    /* ------------------------------------------------------------------------*/
+    /* ------------------------------------------------------------------------*/
+    
+    .flex-container {
+
+        flex-direction: column; /* Cambia la dirección de la fila a columna */
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .caja {
+        width: 100%; /* Cada caja ocupa todo el ancho en pantallas medianas y pequeñas */
+        margin-top: 10%;
+        margin-bottom: 10%;
+        flex-wrap: wrap;
+
+    }
+    .iconoPlanta2
+    {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+
+    }
+    .textoPlanta2
+    {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+
+    .caja, .iconoPlanta2, .tituloh5, .parrafo2
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .spanTituloh5
+    {
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #2b2f38;
+    }
+    .parrafo2{
+        margin-bottom: 5px;
+        margin-top: 6px !important;
+        font-size: 0.8em;
+        color: #2b2f38c2;
+    }
+    .icono2paint
+    {
+        margin-right: 0%;
+        width: 18px !important;
+        height: 13px;
+    }
+
+
+}
+
+.c2{
+    width: 100%;
 }
 .centrarContenido
 {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    text-align: center;
-    width: 70%; /* Cambia este valor según tus necesidades */
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+
 }
+.content2
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 #contenedor-caja
 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .caja
 {
@@ -296,38 +708,78 @@ li{
 {
     margin: 0%;
     vertical-align: baseline;
+    color: #2b2f38c2;
 }
 .content4
 {
+    margin-top: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 15%;
+
+    
 }
+
+
 .contenedor_plantasV
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 }
 #tituloPlantasV
 {
     display: flex;
     justify-content: center;
+
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
+.tituloConvetenedorV
+{
+    font-size:2.5em;
+}
+.parrafo-featured{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size:1em;
+    color:#2b2f38bd;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
 .content3
 {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 #contenedorPlantas
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
+
 }
 .planta
 {
+
+
     background-color: #efeef4;
 
     background-position: top center;
@@ -337,16 +789,17 @@ li{
 
     display: flex;
     flex-direction: column;
-   /* Cambia el fondo al pasar el mouse sobre el elemento background-transition: 0.3s; */
+
+
     border-radius: 16px 16px 16px 16px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 32px;
-    margin-inline-end: 0px;
+
     padding-block-start: 440px;
     padding-block-end: 40px;
     padding-inline-start: 32px;
     padding-inline-end: 64px;
+    
+    margin-top: 5%;
+
 
 }
 .planta1
@@ -378,6 +831,11 @@ li{
     letter-spacing: 2px;
     text-align: center;
     background-color: transparent;
+
+    font-weight: bold; /* Poner el texto en negrita */
+    font-size: 0.75em;
+
+
 }
 .imagen_PlantaV
 {
@@ -400,13 +858,48 @@ li{
     box-sizing: border-box;
     text-align: left;
 }
+
+.tipo_plantaV
+{
+    margin-bottom: 5px;
+    margin-top: 6px !important;
+    font-size:0.9em;
+    color: #2b2f3896;
+}
+.star-rating
+{
+    width: 90px;
+    height: 20px;
+    background: url(imgs/iconos/estrellas.png) center/cover no-repeat;
+} 
+.star
+{
+
+}
+.titulo_plantaV
+{
+    font-size:0.95em;
+    color:#2b2f38;
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.price
+{
+    font-size:0.95em;
+    color:#787a81;
+    text-decoration: none; /* Quitamos el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Poner el texto en negrita */
+}
 .producto_venta
 {
     margin-bottom: 2.5em;
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
+    height: 30%;
     padding: 0;
     position: relative;
     box-sizing: border-box;
@@ -418,6 +911,8 @@ li{
     outline: 0;
     padding: 0;
     vertical-align: baseline;
+
+    margin-bottom: 2%;
 }
 .div_venta
 {
@@ -428,12 +923,12 @@ li{
     font-size: 100%;
     font-style: inherit;
     font-weight: inherit;
+    
 }
 .productos_colummnas
 {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 0 1em;
-    padding: 0;
     list-style: none outside;
     clear: both;
     display: grid;
@@ -445,19 +940,21 @@ li{
     font-weight: inherit;
     margin: 0;
     outline: 0;
-    padding: 0;
+    padding: 0%;
     vertical-align: baseline;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
     unicode-bidi: isolate;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 .contenedor_plantas_ventas
 {
-    max-width: 1200px;
+    width: 100%;
     /* Estilos sin las variables CSS personalizadas */
     flex-basis: auto; /* Cambia 'var(--flex-basis)' por 'auto' */
     flex-grow: 0; /* Cambia 'var(--flex-grow)' por '0' */
@@ -466,10 +963,11 @@ li{
     align-self: auto; /* Cambia 'var(--align-self)' por 'auto' */
     display: flex; /* Cambia 'var(--display)' por 'flex' */
 
-    padding-block-start: 0px; /* Cambia 'var(--padding-block-start)' por '0px' */
-    padding-block-end: 0px; /* Cambia 'var(--padding-block-end)' por '0px' */
-    padding-inline-start: 0px; /* Cambia 'var(--padding-inline-start)' por '0px' */
-    padding-inline-end: 0px;
+    /*padding-block-start: 0px; /* Cambia 'var(--padding-block-start)' por '0px' */
+   /*padding-block-end: 0px; /* Cambia 'var(--padding-block-end)' por '0px' */
+    /*padding-inline-start: 0px; /* Cambia 'var(--padding-inline-start)' por '0px' */
+    /*padding-inline-end: 0px;*/
+    flex-wrap: wrap;
     position: relative;
 }
 .contenedor_comentario
@@ -524,15 +1022,50 @@ li{
 
 .content5{
     display: flex;
-    min-height: 50vh;
-    justify-content: center;
+    min-height: 5%;
+    height: 30vh;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+
+}
+
+
+.contenedor-contacto-titulo
+{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulo_contacto
+{
+    font-size: 1.6em;
+    color: #2b2f38;
+}
+.contenedor-telefono
+{
+    margin-top: 5%;
+}
+.parrafo-contacto
+{
+    color: #2b2f38c4;
+    width: 60%;
+}
+.parrafo-contacto1
+{
+    margin-bottom: 3%;
+    line-height: 2 !important;
 }
 .contenedorDeContacto
 {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    justify-content: center;
+    width: 65%;
+    height: 50%;
+    
 }
 #contenedor-contacto
 {
@@ -616,6 +1149,45 @@ body {
         margin-top: 20px; /* Agregar espacio entre columnas en pantallas más pequeñas */
     }
 }
+
+
+
+/* ----------------------------------------- */
+/* Interesed Parte */
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+
+    
+    height: 30vh;
+    max-width: 100%;
+    min-height: 85vh;
+    background: url(imgs/fondo-macetas.jpg) center/cover no-repeat;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sub-container {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #c0392b;
+    }
 
 
 

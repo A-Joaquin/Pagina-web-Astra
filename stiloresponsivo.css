@@ -1,0 +1,22 @@
+/* Agrega este CSS en tu archivo de estilos o en una etiqueta <style> en tu HTML */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.caja {
+    width: 30%; /* Ancho inicial de las cajas */
+    margin: 10px; /* Espacio entre las cajas */
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Cambia la dirección de la fila a columna */
+    }
+
+    .caja {
+        width: 100%; /* Cada caja ocupa todo el ancho en pantallas medianas y pequeñas */
+    }
+}

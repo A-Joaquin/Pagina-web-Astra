@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-D7eBjBZrl5iIUNyXQ5iWWuMTjgx76i1T0M7QiiNk9MgCW92xMV4iR5h0npx3IlBZ2G7Q4Q/Ly+Fsqh8DSBkRtA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="contenedorTodo">
-        <header>
-            <div id="menu">
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="navbar">
+            <div class="container">
                 <div id="logoGeneral">
                     <div id="logoGeneral2">
                         <span id="logo">
                             <a href="" class="a_logo">
                                 <img src="imgs/plants-store-logo-green.svg" alt="" class="logo_modificar">
                             </a>
-                            
                         </span>
                         <div id="title_div">
                             <span id="title">
@@ -26,27 +27,20 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <ul id="navegadorPag">
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Store</a>
-                        </li>
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="">My account</a>
-                        </li>
+                <nav>
+                    <ul class="nav-links">
+                        <li class="li-nav"><a href="#">Home</a></li>
+                        <li class="li-nav"><a href="#">About</a></li>
+                        <li class="li-nav"><a href="#">Lessons</a></li>
+                        <li class="li-nav"><a href="#">Shows</a></li>
+                        <li class="li-nav"><a href="#">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </header>
+
+        </div>
+    </header>
+    <div id="contenedorTodo">
         <div class="content">
             <div class="image-container">
                 <div id="letras">
@@ -63,10 +57,10 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="c2">
                 <div class="content2">
                     <div class="centrarContenido">
-                        <div id="contenedor-caja">
+                        <div id="contenedor-caja" class="flex-container">
                             <div class="caja">
                                 <div class="iconoPlanta2">
                                     <span>
@@ -75,14 +69,14 @@
                                 </div>
                                 <div class="textoPlanta2">
                                     <h5 class="tituloh5">
-                                        <span> Plants Collection </span>
+                                        <span class="spanTituloh5"> Plants Collection </span>
                                     </h5>
                                     <p class="parrafo2">
                                         Any plants for your space 
                                     </p>
                                 </div>
                             </div>
-    
+                
                             <div class="caja">
                                 <div class="iconoPlanta2">
                                     <span>
@@ -91,13 +85,14 @@
                                 </div>
                                 <div class="textoPlanta2">
                                     <h5 class="tituloh5">
-                                        <span> Free Shipping </span>
+                                        <span class="spanTituloh5"> Free Shipping </span>
                                     </h5>
                                     <p class="parrafo2">
                                         Free shipping on order
                                     </p>
                                 </div>
                             </div>
+                            
                             <div class="caja">
                                 <div class="iconoPlanta2">
                                     <span>
@@ -106,7 +101,7 @@
                                 </div>
                                 <div class="textoPlanta2">
                                     <h5 class="tituloh5">
-                                        <span> 100% Money Back </span>
+                                        <span class="spanTituloh5"> 100% Money Back </span>
                                     </h5>
                                     <p class="parrafo2">
                                         If the item didn't suit you 
@@ -114,12 +109,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-    
-                    </div>
-                    <div>
-                        
                     </div>
                 </div>
             </div>
@@ -200,18 +189,17 @@
             <div class="contenedor_plantasV">
                 <div id="tituloPlantasV">
                     <div>
-                        <h2>
+                        <h2 class="tituloConvetenedorV">
                             Featured Plants 
                         </h2>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div >
+                        <p class="parrafo-featured">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
-                <div>
 
-                </div>
-                <div>
+
+                <div class="mainContenedorPlants">
                     <div>
                         <div>
                             <div class="contenedor_plantas_ventas">
@@ -224,11 +212,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Plants 
                                             </span>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Boncellensis Secullant
                                                 </h2>
                                             </a>
@@ -253,11 +241,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Cactus </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Cleistocactus
                                                 </h2>
                                             </a>
@@ -282,11 +270,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Plants </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Green Soil Lotus
                                                 </h2>
                                             </a>
@@ -311,11 +299,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Plants </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Money Plant
                                                 </h2>
                                             </a>
@@ -340,11 +328,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Cactus </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Old Lady Cactus
                                                 </h2>
                                             </a>
@@ -369,11 +357,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Plants </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Piorro Quisquam
                                                 </h2>
                                             </a>
@@ -398,11 +386,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Plants </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Rattle Snake Tail
                                                 </h2>
                                             </a>
@@ -427,11 +415,11 @@
                                             <a href=""></a>
                                         </div>
                                         <div>
-                                            <span>
+                                            <span class="tipo_plantaV">
                                                 Cactus </span>
                                             <a href=""></a>
                                             <a href="">
-                                                <h2>
+                                                <h2 class="titulo_plantaV">
                                                     Star Cactus
                                                 </h2>
                                             </a>
@@ -461,15 +449,15 @@
         <div class="content5">
             <div class="contenedorDeContacto">
                 <div id="contenedor-contacto">
-                    <div>
+                    <div class="contenedor-contacto-titulo">
                         <div>
                             <div>
-                                <h3>
+                                <h3 class="titulo_contacto">
                                     Need help in choosing the right plants?
                                 </h3>
                             </div>
                         </div>
-                        <div>
+                        <div class="contenedor-telefono">
                             <div>
                                 <div>
                                     <a href="">
@@ -477,7 +465,7 @@
                                             <span>
                                                 <i></i>
                                             </span>
-                                            <span>
+                                            <span class="botonElemento">
                                                 Ask For Help
                                             </span>
                                         </span>
@@ -486,11 +474,11 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="parrafo-contacto">
                         <div>
                             <div>
-                                <p>Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sedurna malesuada consectetuer.</p>
-                                <p>Ornare integer commodo mauris et ligula purus, praesent cubilia laboriosam viverra. Mattis id rhoncus. Integer lacus eu volutpat fusce. Elit etiam phasellus suscipit suscipit dapibus, condimentum tempor quis, turpis luctus dolor sapien vivamus.</p>
+                                <p class="parrafo-contacto1">Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sedurna malesuada consectetuer.</p>
+                                <p class="parrafo-contacto1">Ornare integer commodo mauris et ligula purus, praesent cubilia laboriosam viverra. Mattis id rhoncus. Integer lacus eu volutpat fusce. Elit etiam phasellus suscipit suscipit dapibus, condimentum tempor quis, turpis luctus dolor sapien vivamus.</p>
                             </div>
                         </div>
                     </div>
@@ -537,6 +525,19 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container7">
+        <div class="sub-container">
+          <h2>Interested? Shop This Plant Collection!</h2>
+        </div>
+        <div class="sub-container">
+          <p>Neque porro quisquam est, qui dolore ipsum quia dolor sit amet, consectetur adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+        </div>
+        <div class="sub-container">
+          <button class="btn">Click Me</button>
+        </div>
+      </div>
         
 </body>
 </html>
