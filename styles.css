@@ -10,7 +10,7 @@ body {
     align-items: center; /* Centra verticalmente el contenido */
     position: relative;
     height: 100%;
-    box-sizing: border-box;
+
 }
 
 
@@ -229,7 +229,7 @@ header
 }  
 
 * {
-    box-sizing: border-box;
+
     margin: 0;
     padding: 0;
 }
@@ -641,6 +641,99 @@ body, html {
         width: 18px !important;
         height: 13px;
     }
+
+    /*--------------------------------------------------------------------*/
+    /*TESTIMONIOS*/
+
+
+    .content6
+    {
+        margin-top: 100vw;
+        margin-bottom: 250vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh !important;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 100%;
+
+
+    }
+    .contenedor-testimonio
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .coment1 {
+        background: url(imgs/coment1.jpg) center/cover no-repeat;
+    }
+
+    .coment2 {
+        background: url(imgs/coment2.jpg) center/cover no-repeat;
+    }
+
+    .coment3 {
+        background: url(imgs/coment3.jpg) center/cover no-repeat;
+    }
+
+    .testimonial-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10%;
+    }
+
+
+    .testimonial {
+        margin: 20px;
+        display: flex;
+        align-items: center; /* Centrar verticalmente el contenido */
+    }
+
+    .imagen-testimonio {
+        width: 50%; /* Ancho deseado de la imagen */
+        height: 100%; /* Altura igual a la del contenedor */
+        background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+        background-position: center; /* Centrar la imagen */
+        border-radius: 10px;
+    }
+
+
+    .parrafo-testimonio {
+        padding: 20px; /* Añadir espacio alrededor del texto */
+
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    .parrafo-testimonio1
+    {
+        display: f;
+        line-height: 2;
+    }
+    .nombre-testimonio
+    {
+
+    }
+    .profesion-testimonio
+    {
+
+    }
+    /*--------------------------------------------------------------------*/
 
 
 }
@@ -1078,36 +1171,47 @@ body, html {
 
 .content6
 {
-    min-height: 100vh;
+
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh !important;
 }
 
 .testimonial-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 80%;
 
+    width: 80%;
+    height: 100%;
+
+}
+.contenedor-testimonio
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .coment1 {
-    background-image: url(imgs/coment3.jpg);
+    background: url(imgs/coment1.jpg) center/cover no-repeat;
 }
 
 .coment2 {
-    background-image: url(imgs/coment2.jpg);
+    background: url(imgs/coment2.jpg) center/cover no-repeat;
 }
 
 .coment3 {
-    background-image: url(imgs/coment1.jpg);
+    background: url(imgs/coment3.jpg) center/cover no-repeat;
 }
 
 .testimonial-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10%;
 }
 
 
@@ -1118,7 +1222,7 @@ body, html {
 }
 
 .imagen-testimonio {
-    width: 90%; /* Ancho deseado de la imagen */
+    width: 50%; /* Ancho deseado de la imagen */
     height: 100%; /* Altura igual a la del contenedor */
     background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
     background-position: center; /* Centrar la imagen */
@@ -1128,27 +1232,30 @@ body, html {
 
 .parrafo-testimonio {
     padding: 20px; /* Añadir espacio alrededor del texto */
-    flex-grow: 1; /* Permite que el texto ocupe todo el espacio restante */
+
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
+.parrafo-testimonio1
+{
+    display: f;
+    line-height: 2;
+}
+.nombre-testimonio
+{
+
+}
+.profesion-testimonio
+{
+
 }
 
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column; /* Cambiar la dirección a columna en pantallas más pequeñas */
-        align-items: center; /* Centrar horizontalmente los elementos en pantallas más pequeñas */
-    }
 
-    .testimonial-column + .testimonial-column {
-        margin-left: 0; /* Eliminar el margen entre columnas en pantallas más pequeñas */
-        margin-top: 20px; /* Agregar espacio entre columnas en pantallas más pequeñas */
-    }
-}
 
 
 
@@ -1190,4 +1297,122 @@ body {
     }
 
 
+
+
+/*FOOTER*/
+/*-------------------------------------------------------------*/
+.a-footer{
+    text-decoration: none;
+    color: #333;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilos para el footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Estilos del contenedor del footer */
+  .footer-container {
+    width: 90%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .imgs-footer
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+
+  /* Estilos para la imagen superior */
+  .top-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+  }
+
+  /* Estilos para el texto en el medio */
+  .center-text {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 4%;
+  }
+
+  /* Estilos para las imágenes pequeñas */
+  .small-images-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    width: 80%;
+    
+  }
+
+  .small-image-footer {
+    width: 30%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+
+  /* Estilos para los enlaces rápidos */
+  .quick-links {
+    margin-top: 20px;
+    text-align: left;
+    width: 20%;
+  }
+
+  .quick-links h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .quick-links li {
+    margin-bottom: 5px;
+  }
+  .texto-footer
+  {
+    width: 30%;
+  }
+  .c2Copy
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #logoFooter
+  {
+    max-width: 60px;
+    width: 100px;
+  }
+  .top-image{
+    width: 100px;
+  }
+  .small-image
+  {
+    width: 40px;
+  }
 
