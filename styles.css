@@ -1267,7 +1267,7 @@ nav
 
 .imagen-testimonio {
     width: 50%; /* Ancho deseado de la imagen */
-    height: 100%; /* Altura igual a la del contenedor */
+    height: 15vw; /* Altura igual a la del contenedor */
     background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
     background-position: center; /* Centrar la imagen */
     border-radius: 10px;
