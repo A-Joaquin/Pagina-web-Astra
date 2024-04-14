@@ -70,7 +70,7 @@ a{
     border-radius: 0px 0px 80px 80px;
     max-width: 100%;
     min-height: 55vh;
-    background: linear-gradient(to top, transparent, rgb(255, 255, 255)), url(imgs/about-bg.jpg) center/cover no-repeat; /* Simplificar la propiedad background */
+    background: linear-gradient(to top, transparent, rgb(255, 255, 255)), url(imgs/store-bg.jpg) center/cover no-repeat; /* Simplificar la propiedad background */
 
 
     display: flex;
@@ -569,10 +569,21 @@ nav
 }
 .content4
 {
-    margin-top: 10%;
+    padding-top: 5%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 15%;
+    padding-bottom: 5%;
+
+    
+}
+.content4-2
+{
+    height: 100%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    background-color: #5d61670c;
 
     
 }
@@ -584,6 +595,7 @@ nav
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    align-items: center;
 }
 #tituloPlantasV
 {
@@ -591,12 +603,14 @@ nav
     justify-content: center;
 
     flex-direction: column;
-    align-items: center;
+    width: 95%;
     flex-wrap: wrap;
+    text-align: start;
 }
 .tituloConvetenedorV
 {
-    font-size:2.5em;
+    font-size:3rem;
+    color: #2b2f38;
 }
 .parrafo-featured{
     text-align: center;
@@ -763,8 +777,32 @@ nav
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 30%;
+    width: 30%;
+    height: 25%;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    margin-bottom: 2%;
+}
+
+
+.producto_venta2
+{
+    margin-bottom: 2.5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 25%;
     padding: 0;
     position: relative;
     box-sizing: border-box;
@@ -888,10 +926,11 @@ nav
 .content5{
     display: flex;
     min-height: 5%;
-    height: 30vh;
+    height: 20vw;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid #ccc;
 
 }
 .content5-2{
@@ -1147,7 +1186,7 @@ nav
 
   /* Estilos para el footer */
   footer {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     padding: 20px 0;
     text-align: center;
 
@@ -1686,7 +1725,12 @@ nav
     .producto_venta
     {
         width: 46% !important;
-        margin-bottom: 0% !important;
+        margin-bottom: 15% !important;
+    }
+    .producto_venta2
+    {
+        width: 46% !important;
+        margin-bottom: -5% !important;
     }
 
     .tipo_plantaV
@@ -1738,7 +1782,7 @@ nav
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 50% !important;
+        margin-top: 130% !important;
     }
 
 
@@ -2189,6 +2233,15 @@ nav
 }
 
 
+.tituloConvetenedorV
+{
+    font-size: 1.8rem;
+}
+
+.productos_colummnas
+{
+    justify-content: start;
+}
 
 
 }
