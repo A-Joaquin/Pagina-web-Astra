@@ -1723,6 +1723,21 @@ textarea
 
 
 
+  @media screen and (max-width: 1600px)
+  {
+
+    .contact-box
+    {
+        margin-top: 5%;
+    }
+    .boton-Contact
+    {
+        width: 28%;
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+      
+  }
 
 
 
